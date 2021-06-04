@@ -20,6 +20,7 @@
         $preco -= $preco * 10 / 100; // maneira de atribuição
         echo "<br/>O novo preço com 10% de desconto é R$ $preco"; // normal
         echo "<br/>O novo preço com 10% de desconto é R$ " . number_format($preco, 2); // concatenado para numero em reais
+        
 
     ?>
 </div>
