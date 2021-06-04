@@ -69,8 +69,6 @@
         echo "</br>O valor de $v2 arredondado é " . round($v2); // round() - arredondamento
         echo "</br>A parte inteira de $v2 é " . intval($v2); // intval() - valor inteiro da variável
         echo "<br/>O valor de $v1 em moeda é R$" . number_format($v1,2,",", "."); // number_format() - formatação de real/dinheiro
-
-
         
     ?>
 </div>
