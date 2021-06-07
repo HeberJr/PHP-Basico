@@ -1,5 +1,5 @@
 <?php
-// Ler o ano de nascimento de uma pessoa e mostrar se ela pode votar e dirigir
+// Ler o ano de nascimento de uma pessoa e mostrar se ela pode votar com voto opicional
 ?>
 
 <!DOCTYPE html>
@@ -21,14 +21,13 @@
             if($i < 16){
                 $tipoVoto = "nao vota";
             }
-            else {
-                if (($i >= 16 && $i < 18) || ($i > 65)){
-                    $tipoVoto = "voto opcional";
-                }
-                else{
-                    $tipoVoto = "voto obrigatório";
-                }
+            elseif (($i >= 16 && $i < 18) || ($i > 65)){
+                $tipoVoto = "voto opicional";
             }
+            else{
+                $tipoVoto = "voto obrigatório";
+            }
+            
 
             echo "Para essa idade, $tipoVoto";
         ?>
